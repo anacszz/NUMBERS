@@ -1,0 +1,145 @@
+.container-input {
+  display: flex;
+}
+
+.content-input {
+  display: flex;
+  flex-direction: column;
+  max-width: 86px;
+  width: 100%;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.content-input label {
+  margin-bottom: 8px;
+  font: var(--label-small);
+  color: var(--content-secondary);
+}
+
+.content-input input {
+  width: 100%;
+  background-color: rgba(36, 34, 46, 0.7);
+  border: none;
+  border-radius: 8px;
+  height: 56px;
+  font: var(--display-small);
+  color: var(--content-primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-repeat {
+  font: var(--paragraph-large);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--content-primary);
+  margin-bottom: 40px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox .box {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: var(--content-tertiary);
+  border-radius: 84px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.checkbox .box::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.checkbox input:checked+.box {
+  background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
+}
+
+.checkbox input:checked+.box::before {
+  transform: translateX(20px);
+}
+
+.button-draw {
+  position: relative;
+  background-color: var(--background-tertiary);
+  border: 2px solid transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: var(--label-medium);
+  color: var(--content-primary);
+  padding: 16px 0px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-draw::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(to right,
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.button-draw:hover {
+  transform: scale(1.05);
+}
+
+.button-draw:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 1135px) {
+  .button-draw {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+}
+
+@media (max-width: 769px) {
+  .button-draw {
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+  }
+}

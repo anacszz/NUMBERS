@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500;700&family=Roboto+Mono:wght@700&family=Sora:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Numbers</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/icons/logo.svg" alt="icone do numbers" />
+      <h1>NUMBERS</h1>
+    </header>
+    <main>
+      <section class="container-intro">
+        <div class="content-intro">
+          <span> ONLINE - GRATUITO </span>
+          <h1>SORTEADOR DE NÚMEROS</h1>
+        </div>
+
+        <div class="display-desktop content-info">
+          <img src="assets/icons/info.svg" alt="icone de informação" />
+          <div>
+            <h3>Como funciona o sorteador de números?</h3>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+        </div>
+        <div class="display-desktop content-info">
+          <img src="assets/icons/info.svg" alt="icone de informação" />
+          <div>
+            <h3>Posso escolher o intervalo dos números?</h3>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo
+              dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-draw">
+        <h2>QUERO SORTEAR:</h2>
+        <p class="p-dinamic">
+          defina o intervalo e a quantidade de números, clique em "Sortear" e
+          veja os resultados na tela. É rápido e fácil!
+        </p>
+        <form>
+          <div class="container-input">
+            <div class="container-random-number"></div>
+
+            <div class="content-input">
+              <label for="quantityOfNumbers">NÚMEROS</label>
+              <input type="text" id="quantityOfNumbers" required />
+            </div>
+            <div class="content-input">
+              <label for="fromNumber">DE</label>
+              <input type="text" id="fromNumber" required />
+            </div>
+            <div class="content-input">
+              <label for="untilNumber">ATÉ</label>
+              <input type="text" id="untilNumber" required />
+            </div>
+          </div>
+
+          <div class="warning">
+            Erro: o intervalo não suporta essa quantidade de números.
+          </div>
+
+          <div class="button-repeat">
+            <label class="checkbox">
+              <input type="checkbox" id="noRepeatNumber" />
+              <span class="box"></span>
+            </label>
+            <span>Não repetir número</span>
+          </div>
+
+          <button class="button-draw">
+            SORTEAR
+            <img src="assets/icons/arrow.svg" alt="flecha" />
+          </button>
+        </form>
+
+        <div class="display-responsive content-info">
+          <img src="assets/icons/info.svg" alt="icone de informação" />
+          <div>
+            <h3>Como funciona o sorteador de números?</h3>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+        </div>
+        <div class="display-responsive content-info">
+          <img src="assets/icons/info.svg" alt="icone de informação" />
+          <div>
+            <h3>Posso escolher o intervalo dos números?</h3>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo
+              dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

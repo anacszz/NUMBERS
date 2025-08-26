@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
+  --color-inverse: #030203;
+
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
+
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #a1f0d8;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  --gradient-border:
+    linear-gradient(to right,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%);
+
+  --gradient-background:
+    linear-gradient(to right,
+      #d586e0 0%,
+      #91a1fa 98.93%);
+
+  --gradient-content:
+    linear-gradient(to right,
+      #c7c9cc 0%,
+      #3d3d3d 100%);
+
+  --font-sora: "Sora", sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-roboto-flex: "Roboto Flex", sans-serif;
+
+
+  --display-large: 800 72px var(--font-sora);
+  --display-medium: 800 40px var(--font-sora);
+  --display-small: 700 32px var(--font-sora);
+
+  --overline: 700 16px var(--font-roboto-mono);
+
+  --paragraph-large: 500 16px var(--font-roboto-flex);
+  --paragraph-medium: 500 14px var(--font-roboto-flex);
+  --paragraph-small: 500 12px var(--font-roboto-flex);
+  --label-medium: 700 20px var(--font-roboto-flex);
+  --label-small: 700 16px var(--font-roboto-flex);
+}
